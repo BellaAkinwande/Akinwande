@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header" id="home">
+        <nav>
+            <a href="index.html" class="logo"><h1>Talkto<span>Bella</span></h1></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home" target="_self">HOME</a></li>
+                   <li><a href="#our-services" target="_self">WHAT WE TALK ABOUT</a></li> 
+                   <li><a href="#contact" target="_self">CONTACT US</a></li>
+                   <li><a href="./index 2.html" target="_self">JOIN</a></li>
+                   <li> <a href="./index 3.html" target="_self">LOG IN</a></li>
+                </ul>
+            </div> 
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+           </nav>
+
+           <div class="text-box">
+            <h2>Pour your Hearts out You are Safe here</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non unde sint fuga autem earum debitis!</p>
+            <a href="#" class="hero-btn">Visit us to know more</a>
+           </div>
+    </section>
+
+    <section class="our-services" id="our-services">
+        <h1>WHAT WE TALK ABOUT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vel ratione adipisci sapiente eum asperiores distinctio hic. Quo eos ipsam eius! Nobis, tempora adipisci quasi minima voluptas odit cumque officia.</p>
+        <a  href="./index.html"><p class="go-back">Go back to home</p></a>
+    
+        <div class="row">
+            <div class="course-col">
+                <h3>School</h3>
+                <p>Lorem ipsum dolor,  molestiae accusantium esse odio molestias! Magni, fugiat placeat.</p>
+            </div>
+        <div class="course-col">
+            <h3>Relationship</h3>
+            <p>Lorem ipsum dolor,  molestiae accusantium esse odio molestias! Magni, fugiat placeat.</p>
+        </div>
+    <div class="course-col">
+        <h3>Music</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. accusantium esse odio molestias! Magni, fugiat placeat.</p>
+    </div>
+</div>
+    </section>
+    
+
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="container-left">
+            <h2>CONTACT US</h2>
+
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+        
+        
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Talk to Us" cols="30" rows="10"></textarea>
+                
+                <button type="submit" class="submit">Send Message</button>
+            </form>
+        </div>
+
+    <div class="container-right">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.9796684360463!2d3.2317411999999868!3d6.5242509000000055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b850a543b7661%3A0x87363cb562ef771c!2sIle-Eja%20Rd%2C%20Ijegun%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1660692413635!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+    </div>
+</section>
+
+
+
+
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

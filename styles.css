@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat;
+    
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+   background: url(picture\ background.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%; 
+}
+
+span {
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 150px;
+    color:  #3a0ca3;
+    font-size: 25px;
+   
+}
+
+
+.nav-links {
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2.5px;
+    background: white;
+    display: inline-flex;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #3a0ca3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 20px 40px;
+    font-size: 14px;
+    color: black;
+}
+
+.text-box a {
+    color: #3a0ca3;
+}
+
+.hero-btn {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid black;
+    background-color: #3a0ca3;
+    transition: 1s;
+    color: white;
+}
+
+nav .fa {
+    display: none;
+} 
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #3a0ca3;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 5px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    
+    .nav-links ul {
+        padding: 30px;
+    }
+
+}
+
+.our-services {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #fff;
+}
+
+.go-back {
+    color: #3a0ca3;
+    font-family: poppins;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: #3a0ca3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.course-col p {
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px black;
+}
+
+.contact {
+    background: #f2f2f2;
+    padding: 5em;
+}
+
+.contact h2 {
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+ label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: .8em;
+    border-radius: .3em;
+    margin-bottom: 1em;
+    border: 1px solid gray;
+}
+
+button {
+    display: block;
+    margin-bottom: 5em;
+    background-color: #3a0ca3;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 5em;
+    display: inline-block;
+    width: 100%;
+    padding: .8em;
+    width: unset;
+    cursor: pointer;
+}
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 1080px) {
+    .contact{
+        position: relative;
+    }
+    
+    .container {
+        display: flex;
+    }
+
+    .container-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%;
+    }
+    
+    iframe {
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
